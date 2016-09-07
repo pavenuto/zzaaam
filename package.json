@@ -16,9 +16,7 @@
     "brunch": "^2.4.0",
     "localtunnel": "^1.8.1",
     "normalize.css": "^4.2.0",
-    "statik": "^1.4.6"
-  },
-  "devDependencies": {
+    "statik": "^1.4.6",
     "auto-reload-brunch": "^2.0.0",
     "babel-brunch": "~6.0.0",
     "babel-preset-es2015": "~6.3.13",
