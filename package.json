@@ -10,7 +10,7 @@
   "scripts": {
     "start": "brunch watch --server && lt --port 3333",
     "build": "rm -rf public/ && brunch build --production",
-    "postinstall": "brunch build --optimize"
+    "postinstall": "brunch build --production"
   },
   "dependencies": {
     "localtunnel": "^1.8.1",
