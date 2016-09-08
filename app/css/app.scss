@@ -1,10 +1,15 @@
 @import "tachyons";
 
-body {
-  font-family: Helvetica;
-  background-image: linear-gradient(-180deg, #C5DE8B 0%, #FD5871 100%);
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
+body {
+  font-family: Helvetica;
+  font-family: 'Space Mono', monospace;
+  background-image: linear-gradient(-180deg, #C5DE8B 0%, #FD5871 100%);
+}
 
 .container {
   margin: 0 auto;
@@ -13,4 +18,20 @@ body {
 .button {
   color: #FD5871;
   font-weight: bold;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    position: relative;
+    top: 0.25rem;
+    outline: 0;
+  }
+}
+
+.order {
+ animation: fade 0.5s;
+ animation-timing-function: easeinSine;
+ animation-iteration-count: 1;
 }

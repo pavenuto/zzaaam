@@ -1,2 +1,6 @@
 var statik = require('statik');
-statik(3000);
+statik({
+    root: 'public/'
+});
+
+console.log('hi')

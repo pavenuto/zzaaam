@@ -56,8 +56,8 @@ const render = () => {
  let rice = random(rices);
  let sauce = random(sauces);
  let topping = randomSet(toppings, 6);
- let order = `<strong class="white">${protein}</strong> with <strong class="white">${rice}</strong>, <strong class="white">${topping}</strong>, plus <strong class="white">${sauce}</strong>.`;
- let html = `<div class="order f3 f2-ns">${order}</div>`;
+ let order = `<strong class="white">${rice}</strong> bowl with <strong class="white">${protein}</strong>, <strong class="white">${topping}</strong>, plus <strong class="white">${sauce}</strong>.`;
+ let html = `<div class="order f3 f2-ns lh-title">${order}</div>`;
 
  document.getElementById("app").innerHTML = html;
 }
