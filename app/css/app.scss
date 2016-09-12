@@ -6,13 +6,13 @@
 }
 
 body {
-  font-family: Helvetica;
   font-family: 'Space Mono', monospace;
   background-image: linear-gradient(-180deg, #C5DE8B 0%, #FD5871 100%);
 }
 
 .container {
   margin: 0 auto;
+  height: 100vh;
 }
 
 .button {

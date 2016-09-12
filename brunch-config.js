@@ -13,16 +13,24 @@ module.exports = {
     babel: {presets: ['es2015']},
     sass: {
       options: {
-        mode: 'native'
-        , includePaths: [
-          'node_modules/normalize.css',
+        mode: 'native',
+        includePaths: [
           'node_modules/tachyons/css'
-        ]
-        // Set the precision for arithmetic operations.
-        , precision: 8
-        // To enable embedded source maps, pass the option `sourceMapEmbed`. This is only supported in _native_ mode; Ruby Sass isn't supported.
-        , sourceMapEmbed: true
+        ],
+        precision: 8,
+        sourceMapEmbed: true
       }
-    }
+    },
+    digest: {
+     pattern: /DIGEST\(\/?([^\)]*)\)/g,
+     discardNonFilenamePatternParts: true,
+     referenceFiles: /\.html$/,
+     precision: 8,
+     alwaysRun: false,
+     environments: ['production'],
+     prependHost: null,
+     manifest: '',
+     infixes: []
+   }
   }
 };
